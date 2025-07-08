@@ -7,7 +7,6 @@ const connectDB = async () => {
   pool.getConnection((err, connection) => {
     if (err) {
       console.log({ error: err.message });
-      console.error(err);
       return
     }
 
